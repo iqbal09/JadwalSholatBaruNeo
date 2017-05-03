@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">JadwalSholatNeo</string>
+    <string name="imsak">Imsak</string>
+    <string name="subuh">Subuh</string>
+    <string name="djuhur">Djuhur</string>
+    <string name="ashar">Ashar</string>
+    <string name="maghrib">Maghrib</string>
+    <string name="isya">Isya</string>
+    <string-array name="aktifitas_todo">
+        <item>Medan</item>
+        <item>Jakarta</item>
+        <item>Bandung</item>
+    </string-array>
 </resources>
