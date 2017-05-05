@@ -40,6 +40,7 @@
     <RelativeLayout
         android:layout_marginTop="20dp"
         android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
         android:layout_width="match_parent"
         android:layout_height="40dp">
         <LinearLayout
@@ -60,22 +61,31 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:gravity="center_vertical"
-            android:layout_marginLeft="50dp"
+            android:layout_marginLeft="40dp"
             android:text="04:32"
+            android:onClick="setTimeImsak"
             android:textSize="24sp"/>
         </LinearLayout>
-        <ImageView
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:src="@drawable/ic_volume_off_black_24dp"
-            android:id="@+id/imageImsak"
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:background="@android:color/darker_gray"
             android:layout_alignParentRight="true"
-            android:layout_marginRight="20dp"/>
+            >
+        <ToggleButton
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/ic_volume_off_black_24dp"
+            android:id="@+id/imageImsak"
+            android:onClick="OnToggleClickedImsak"
+            android:textOn=""
+            android:textOff=""/>
+        </LinearLayout>
     </RelativeLayout>
     <RelativeLayout
         android:layout_marginTop="20dp"
         android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
         android:layout_width="match_parent"
         android:layout_height="40dp">
         <LinearLayout
@@ -96,22 +106,31 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:gravity="center_vertical"
-                android:layout_marginLeft="50dp"
+                android:layout_marginLeft="40dp"
                 android:text="06:01"
+                android:onClick="setTimeSubuh"
                 android:textSize="24sp"/>
         </LinearLayout>
-        <ImageView
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:src="@drawable/ic_volume_up_black_24dp"
-            android:id="@+id/imageSubuh"
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:background="@android:color/darker_gray"
             android:layout_alignParentRight="true"
-            android:layout_marginRight="20dp"/>
+            >
+            <ToggleButton
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@drawable/ic_volume_off_black_24dp"
+                android:id="@+id/imageSubuh"
+                android:onClick="OnToggleClickedSubuh"
+                android:textOn=""
+                android:textOff=""/>
+        </LinearLayout>
     </RelativeLayout>
     <RelativeLayout
         android:layout_marginTop="20dp"
         android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
         android:layout_width="match_parent"
         android:layout_height="40dp">
         <LinearLayout
@@ -132,22 +151,31 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:gravity="center_vertical"
-                android:layout_marginLeft="50dp"
+                android:layout_marginLeft="40dp"
                 android:text="11:57"
+                android:onClick="setTimeDjuhur"
                 android:textSize="24sp"/>
         </LinearLayout>
-        <ImageView
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:src="@drawable/ic_volume_up_black_24dp"
-            android:id="@+id/imageDjuhur"
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:background="@android:color/darker_gray"
             android:layout_alignParentRight="true"
-            android:layout_marginRight="20dp"/>
+            >
+            <ToggleButton
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@drawable/ic_volume_off_black_24dp"
+                android:id="@+id/imageDjuhur"
+                android:onClick="OnToggleClickedDjuhur"
+                android:textOn=""
+                android:textOff=""/>
+        </LinearLayout>
     </RelativeLayout>
     <RelativeLayout
         android:layout_marginTop="20dp"
         android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
         android:layout_width="match_parent"
         android:layout_height="40dp">
         <LinearLayout
@@ -168,33 +196,49 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:gravity="center_vertical"
-                android:layout_marginLeft="50dp"
+                android:layout_marginLeft="40dp"
                 android:text="15:19"
+                android:onClick="setTimeAshar"
                 android:textSize="24sp"/>
         </LinearLayout>
-        <ImageView
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:src="@drawable/ic_volume_up_black_24dp"
-            android:id="@+id/imageAshar"
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:background="@android:color/darker_gray"
             android:layout_alignParentRight="true"
-            android:layout_marginRight="20dp"/>
+            >
+            <ToggleButton
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@drawable/ic_volume_off_black_24dp"
+                android:id="@+id/imageAshar"
+                android:onClick="OnToggleClickedAshar"
+                android:textOn=""
+                android:textOff=""/>
+        </LinearLayout>
     </RelativeLayout>
     <RelativeLayout
         android:layout_marginTop="20dp"
         android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
         android:layout_width="match_parent"
         android:layout_height="40dp">
 
-        <ImageView
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:src="@drawable/ic_volume_up_black_24dp"
-            android:id="@+id/imageMaghrib"
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:background="@android:color/darker_gray"
             android:layout_alignParentRight="true"
-            android:layout_marginRight="20dp"/>
+            >
+            <ToggleButton
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@drawable/ic_volume_off_black_24dp"
+                android:id="@+id/imageMaghrib"
+                android:onClick="OnToggleClickedMaghrib"
+                android:textOn=""
+                android:textOff=""/>
+        </LinearLayout>
 
         <LinearLayout
             android:layout_width="250dp"
@@ -216,14 +260,16 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:gravity="center_vertical"
-                android:layout_marginLeft="50dp"
+                android:layout_marginLeft="40dp"
                 android:text="17:51"
+                android:onClick="setTimeMaghrib"
                 android:textSize="24sp"/>
         </LinearLayout>
     </RelativeLayout>
     <RelativeLayout
         android:layout_marginTop="20dp"
         android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
         android:layout_width="match_parent"
         android:layout_height="40dp">
         <LinearLayout
@@ -244,18 +290,26 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:gravity="center_vertical"
-                android:layout_marginLeft="50dp"
+                android:layout_marginLeft="40dp"
                 android:text="04:32"
+                android:onClick="setTimeIsya"
                 android:textSize="24sp"/>
         </LinearLayout>
-        <ImageView
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:src="@drawable/ic_volume_up_black_24dp"
-            android:id="@+id/imageIsya"
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:background="@android:color/darker_gray"
             android:layout_alignParentRight="true"
-            android:layout_marginRight="20dp"/>
+            >
+            <ToggleButton
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@drawable/ic_volume_off_black_24dp"
+                android:id="@+id/imageIsya"
+                android:onClick="OnToggleClickedIsya"
+                android:textOn=""
+                android:textOff=""/>
+        </LinearLayout>
     </RelativeLayout>
     </LinearLayout>
     <!--menambahkan elemen AdView untuk menampilkan iklan/ads-->

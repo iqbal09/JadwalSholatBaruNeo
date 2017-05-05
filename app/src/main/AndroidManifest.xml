@@ -4,6 +4,7 @@
 
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
 
     <application
         android:allowBackup="true"
@@ -24,6 +25,37 @@
         <activity android:name="com.google.android.gms.ads.AdActivity"
             android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
             android:theme="@android:style/Theme.Translucent" />
+
+        <service
+            android:name=".AlarmServiceImsak"
+            android:enabled="true" />
+        <receiver android:name=".AlarmReceiverImsak" >
+        </receiver>
+        <service
+            android:name=".AlarmServiceSubuh"
+            android:enabled="true" />
+        <receiver android:name=".AlarmReceiverSubuh" >
+        </receiver>
+        <service
+            android:name=".AlarmServiceDjuhur"
+            android:enabled="true" />
+        <receiver android:name=".AlarmReceiverDjuhur" >
+        </receiver>
+        <service
+            android:name=".AlarmServiceAshar"
+            android:enabled="true" />
+        <receiver android:name=".AlarmReceiverAshar" >
+        </receiver>
+        <service
+            android:name=".AlarmServiceMaghrib"
+            android:enabled="true" />
+        <receiver android:name=".AlarmReceiverMaghrib" >
+        </receiver>
+        <service
+            android:name=".AlarmServiceIsya"
+            android:enabled="true" />
+        <receiver android:name=".AlarmReceiverIsya" >
+        </receiver>
 
     </application>
 
